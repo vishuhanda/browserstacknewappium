@@ -14,7 +14,6 @@ public class logintest {
 
         System.out.println("First test");
         Drivermanager.tearDownDriver();
-        throw new RuntimeException("demo exception");
 
     }
 
