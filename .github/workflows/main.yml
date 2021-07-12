@@ -32,4 +32,6 @@ jobs:
         run: |
             echo Making maven build
             ls
-            mvn clean install -Dsuitexml="testng.xml"
+            ${{ github.event }}
+      #mvn clean install -Dsuitexml="testng.xml"
+            
