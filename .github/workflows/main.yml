@@ -33,5 +33,5 @@ jobs:
             echo Making maven build
             ls
             echo browserstackurl ${{ github.event.client_payload.abc }}
-      #mvn clean install -Dsuitexml="testng.xml"
+            mvn clean install -Dsuitexml="testng.xml" and -Dbrowserstackurl="${{ github.event.client_payload.abc }}"
             
