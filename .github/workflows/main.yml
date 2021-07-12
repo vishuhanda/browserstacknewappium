@@ -28,5 +28,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Build automation project
         run: |
-            echo Making android build 
+            echo Making maven build
+            ls
             mvn clean install -Dsuitexml=testng.xml
