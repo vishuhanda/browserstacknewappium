@@ -30,4 +30,4 @@ jobs:
         run: |
             echo Making maven build
             ls
-            mvn clean install -Dsuitexml=testng.xml
+            mvn clean install -Dsuitexml="testng.xml"
