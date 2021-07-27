@@ -2,6 +2,7 @@
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.WebDriver;
 import io.appium.java_client.MobileElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -27,14 +28,14 @@ public class Drivermanager {
         caps.setCapability("browserstack.key", "puL2x1SZ4AhecfrcxW39");
         System.out.println("browserstackurl :- " + System.getProperty("browserstackurl"));
         // Specify device and os_version for testing
-        caps.setCapability("device", "Google Pixel 3");
-        caps.setCapability("os_version", "9.0");
+        caps.setCapability("device", "iPhone XS");
+        caps.setCapability("os_version", "14");
 
         // Set other BrowserStack capabilities
         caps.setCapability("project", "First Java Project");
-        caps.setCapability("build", "Java Android");
+        caps.setCapability("build", "Java IOS project");
         caps.setCapability("name", "first_test");
-        AppiumDriver<MobileElement> appiumDriver = new AndroidDriver<MobileElement>(new URL("http://hub.browserstack.com/wd/hub"), caps);
+        AppiumDriver<MobileElement> appiumDriver = new IOSDriver<MobileElement>(new URL("http://hub.browserstack.com/wd/hub"), caps);
         appiumDriverThreadLocal.set(appiumDriver);
 
     }
