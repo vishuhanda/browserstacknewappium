@@ -23,7 +23,7 @@ jobs:
     steps:
       # setting up pip
       - name: run module based on cron
-        if: github.event.schedule = '15 17 * * *'
+        if: github.event.schedule == '15 17 * * *'
         uses: peter-evans/repository-dispatch@v2
         with:
           token: ${{ secrets.REPO_ACCESS_TOKEN }}
