@@ -27,7 +27,7 @@ jobs:
         uses: peter-evans/repository-dispatch@v2
         with:
           token: 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
-          repository: username/my-repo
+          repository: vishuhanda/browserstacknewappium
           event-type: "module_wise_automation_suite"
           client-payload: '{"module_name": "credential_holders"}'
 
